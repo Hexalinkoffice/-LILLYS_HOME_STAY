@@ -1,8 +1,6 @@
 document.documentElement.classList.add("js-enabled");
 
 const galleryImages = [
-  "WhatsApp Image 2026-11-02 at 5.31.07 PM (1).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.07 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.08 PM (1).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.08 PM (2).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.08 PM.jpeg",
@@ -17,7 +15,6 @@ const galleryImages = [
   "WhatsApp Image 2026-11-02 at 5.31.11 PM (2).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.11 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.12 PM (1).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.12 PM (2).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.12 PM (3).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.12 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.13 PM.jpeg",
@@ -26,13 +23,11 @@ const galleryImages = [
   "WhatsApp Image 2026-11-02 at 5.31.15 PM (3).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.15 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.16 PM (1).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.16 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.17 PM (1).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.17 PM (2).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.17 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.18 PM (1).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.18 PM (2).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.18 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.19 PM (1).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.19 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.20 PM (1).jpeg",
