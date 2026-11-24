@@ -949,117 +949,106 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
 .experiences-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  max-width: 1100px;
+  gap: 24px;
+  max-width: 1120px;
   margin: 0 auto;
+  align-items: stretch;
 }
 .exp-card {
   position: relative;
-  border-radius: 28px;
-  overflow: hidden;
-  min-height: 395px;
-  padding: 26px 22px;
+  background: var(--paper);
+  border-radius: 20px;
+  padding: 34px 28px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
-  isolation: isolate;
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  background: var(--green);
+  justify-content: flex-start;
+  border: 1px solid #dfe5dc;
+  box-shadow: 0 4px 20px rgba(24, 60, 43, 0.05);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .exp-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 40px rgba(16, 43, 30, 0.28);
+  box-shadow: 0 16px 36px rgba(24, 60, 43, 0.10);
+  border-color: #c7d5c4;
 }
-.exp-bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-  z-index: 0;
+.exp-card-highlight {
+  background: #ffffff;
+  border: 1px solid #dec89c;
+  box-shadow: 0 8px 24px rgba(198, 167, 107, 0.16);
+  position: relative;
 }
-.exp-card:hover .exp-bg {
-  transform: scale(1.06);
+.exp-card-highlight:hover {
+  border-color: var(--gold);
+  box-shadow: 0 18px 40px rgba(198, 167, 107, 0.25);
 }
-.exp-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 24, 16, 0.05) 0%,
-    rgba(10, 24, 16, 0.18) 32%,
-    rgba(8, 20, 13, 0.72) 65%,
-    rgba(6, 16, 10, 0.94) 100%
-  );
-  z-index: 1;
-  transition: background 0.3s ease;
+.exp-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--green);
+  background: #eaf1e9;
+  padding: 5px 13px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #d5e2d4;
 }
-.exp-card:hover .exp-overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(10, 24, 16, 0.0) 0%,
-    rgba(10, 24, 16, 0.12) 32%,
-    rgba(8, 20, 13, 0.68) 65%,
-    rgba(6, 16, 10, 0.92) 100%
-  );
+.exp-tag-featured {
+  color: #8c6820;
+  background: #fbf3dc;
+  border-color: #ecdcaa;
 }
 .exp-content {
-  position: relative;
-  z-index: 2;
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .exp-card h3 {
-  font-size: 21px;
+  font-size: 22px;
   font-family: var(--serif);
   font-weight: 600;
-  color: #ffffff;
-  margin: 0 0 6px;
-  letter-spacing: -0.2px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.9);
+  color: var(--green);
+  margin: 0 0 10px;
+  letter-spacing: -0.3px;
+  line-height: 1.25;
 }
 .exp-card > p,
 .exp-content > p {
-  font-size: 12.5px;
-  color: #e5ece4;
-  line-height: 1.55;
-  margin: 0 0 12px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 13.5px;
+  color: #556357;
+  line-height: 1.65;
+  margin: 0 0 20px;
 }
 .exp-list {
   list-style: none;
-  padding: 0;
+  padding: 18px 0 0;
   margin: 0;
   display: grid;
-  gap: 7px;
+  gap: 12px;
+  border-top: 1px solid #ebf0e9;
+  flex-grow: 1;
 }
 .exp-list li {
-  font-size: 12px;
-  color: #dce7db;
-  line-height: 1.5;
-  padding-left: 16px;
+  font-size: 13px;
+  color: #455447;
+  line-height: 1.6;
+  padding-left: 20px;
   position: relative;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
 }
 .exp-list li::before {
   content: "•";
   color: var(--gold);
   position: absolute;
-  left: 0;
-  font-size: 16px;
+  left: 2px;
+  font-size: 18px;
   line-height: 1;
-  top: -1px;
+  top: 0px;
 }
 .exp-list li strong {
-  color: #ffffff;
+  color: #1a2b20;
   font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-}
-.exp-card-highlight {
-  border: 1px solid rgba(198, 167, 107, 0.6);
-  box-shadow: 0 10px 30px rgba(198, 167, 107, 0.16);
 }
 
 /* Certificate Section */
@@ -1068,14 +1057,15 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
   background: var(--paper);
 }
 .certificate-card {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 50px;
-  align-items: center;
+  display: block;
   background: var(--cream);
-  padding: 50px 54px;
-  border-radius: 12px;
+  padding: 48px 52px;
+  border-radius: 16px;
   border: 1px solid #dce2d9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+.certificate-copy {
+  max-width: 960px;
 }
 .certificate-copy h2 {
   font-size: clamp(34px, 4vw, 44px);
@@ -1083,44 +1073,55 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
   line-height: 1.15;
 }
 .certificate-copy > p {
-  font-size: 14px;
+  font-size: 14.5px;
   color: #556357;
   line-height: 1.8;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
+  max-width: 780px;
 }
 .cert-details-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 .cert-detail-item {
   background: var(--paper);
-  padding: 14px 16px;
-  border-radius: 6px;
+  padding: 16px 18px;
+  border-radius: 8px;
   border: 1px solid #e1e6de;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cert-detail-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 .cert-detail-item strong {
   display: block;
-  font-size: 11px;
+  font-size: 10.5px;
   color: #727e73;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 .cert-detail-item span {
   display: block;
-  font-size: 13px;
+  font-size: 13.5px;
   color: #243126;
   font-weight: 600;
+  line-height: 1.4;
 }
 .cert-verified {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: var(--green);
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 600;
+  background: #eaf1e9;
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid #d2dfd1;
 }
 .cert-check-icon {
   width: 22px;
@@ -1132,60 +1133,6 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
   place-items: center;
   font-size: 12px;
   flex-shrink: 0;
-}
-.certificate-visual {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.certificate-frame {
-  position: relative;
-  max-width: 380px;
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 16px 38px rgba(17, 42, 31, 0.16);
-  border: 1px solid #d4ded1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: zoom-in;
-  display: block;
-  text-align: left;
-}
-.certificate-frame:hover {
-  transform: translateY(-3px) scale(1.015);
-  box-shadow: 0 20px 45px rgba(17, 42, 31, 0.22);
-}
-.certificate-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-.cert-zoom-pill {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(24, 60, 43, 0.92);
-  color: #ffffff;
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 7px 16px;
-  border-radius: 20px;
-  white-space: nowrap;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-  transition: background 0.2s, transform 0.2s;
-  pointer-events: none;
-}
-.certificate-frame:hover .cert-zoom-pill {
-  transform: translateX(-50%) translateY(-2px);
-  background: var(--green);
-}
-.cert-caption {
-  margin-top: 12px;
-  font-size: 11.5px;
-  color: #6b776c;
-  text-align: center;
 }
 
 /* Certificate Modal (Full Size View) */
@@ -1569,7 +1516,8 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
   .reviews-grid { grid-template-columns: 1fr; }
   .attractions-grid { grid-template-columns: repeat(2, 1fr); }
   .how-to-reach-grid { grid-template-columns: 1fr; }
-  .certificate-card { grid-template-columns: 1fr; gap: 36px; padding: 38px 30px; }
+  .certificate-card { padding: 38px 30px; }
+  .cert-details-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 680px) {
   html { scroll-padding-top: 72px; }
