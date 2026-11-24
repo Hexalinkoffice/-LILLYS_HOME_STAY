@@ -979,7 +979,7 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
   font-family: var(--serif);
   font-weight: 600;
   color: #ffffff;
-  margin: 0 0 10px;
+  margin: 0 0 16px;
   letter-spacing: -0.3px;
   line-height: 1.25;
 }
@@ -992,18 +992,19 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
 }
 .exp-list {
   list-style: none;
-  padding: 16px 0 0;
+  padding: 18px 0 0;
   margin: 0;
   display: grid;
-  gap: 11px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  gap: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
   flex-grow: 1;
 }
 .exp-list li {
-  font-size: 13px;
-  color: #e2ece1;
-  line-height: 1.55;
-  padding-left: 20px;
+  font-size: 14.5px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 22px;
   position: relative;
 }
 .exp-list li::before {
@@ -1011,9 +1012,9 @@ h1 em, h2 em { color: #61795d; font-weight: 500; }
   color: var(--gold);
   position: absolute;
   left: 2px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
-  top: 0px;
+  top: -2px;
 }
 .exp-list li strong {
   color: #ffffff;
