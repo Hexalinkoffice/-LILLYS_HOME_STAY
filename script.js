@@ -21,11 +21,8 @@ const galleryImages = [
   "WhatsApp Image 2026-11-02 at 5.31.12 PM (3).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.12 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.13 PM.jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.14 PM (1).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.14 PM (2).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.14 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.15 PM (1).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.15 PM (2).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.15 PM (3).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.15 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.16 PM (1).jpeg",
@@ -52,7 +49,16 @@ const galleryImages = [
   "WhatsApp Image 2026-11-02 at 5.31.24 PM (2).jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.24 PM.jpeg",
   "WhatsApp Image 2026-11-02 at 5.31.25 PM (1).jpeg",
-  "WhatsApp Image 2026-11-02 at 5.31.25 PM.jpeg"
+  "WhatsApp Image 2026-11-02 at 5.31.25 PM.jpeg",
+  "photos1.jpeg",
+  "photos2.jpeg",
+  "photos3.jpeg",
+  "photos4.jpeg",
+  "photos5.jpeg",
+  "photos6.jpeg",
+  "photos7.jpeg",
+  "photos8.jpeg",
+  "photos9.jpeg"
 ];
 
 const imageDirectory = "image/WhatsApp Unknown 2026-11-03 at 2.09.09 PM/";
